@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Average Calcultor</title>
+</head>
+<body>
+    <h1>Average Calculator</h1>
+
+    <form onsubmit="calculate();return false">
+        <label for="inputSubject1Number">Number 1:</label>
+        <input type="number" id="inputSubject1Number" placeholder="Enter your number"><br>
+        <label for="inputSubject2Number">Number 2:</label>
+        <input type="number" id="inputSubject2Number" placeholder="Enter your number"><br>
+        <label for="inputSubject3Number">Number 3:</label>
+        <input type="number" id="inputSubject3Number" placeholder="Enter your number"><br>
+        <label for="inputSubject4Number">Number 4:</label>
+        <input type="number" id="inputSubject4Number" placeholder="Enter your number"><br>
+        <label for="inputSubject5Number">Number 5:</label>
+        <input type="number" id="inputSubject5Number" placeholder="Enter your number"><br>
+        <label for="inputSubject6Number">Number 6:</label>
+        <input type="number" id="inputSubject6Number" placeholder="Enter your number"><br>
+        <label for="inputSubject7Number">Number 7:</label>
+        <input type="number" id="inputSubject7Number" placeholder="Enter your number"><br>
+        <label for="inputSubject8Number">Number 8:</label>
+        <input type="number" id="inputSubject8Number" placeholder="Enter your number"><br>
+        <label for="inputSubject9Number">Number 9:</label>
+        <input type="number" id="inputSubject9Number" placeholder="Enter your number"><br>
+        <label for="inputSubject10Number">Number 10:</label>
+        <input type="number" id="inputSubject10Number" placeholder="Enter your number"><br>
+        <button type="submit">calculate</button>
+    </form>
+    <h1 id="result"></h1>
+       
+    <script>
+        function calculate(){
+            let num1 = document.querySelector("#inputSubject1Number").value;
+            let num2= document.querySelector("#inputSubject2Number").value;
+            let num3 = document.querySelector("#inputSubject3Number").value;
+            let num4 = document.querySelector("#inputSubject4Number").value;
+            let num5 = document.querySelector("#inputSubject5Number").value;
+            let num6 = document.querySelector("#inputSubject6Number").value;
+            let num7= document.querySelector("#inputSubject7Number").value;
+            let num8 = document.querySelector("#inputSubject8Number").value;
+            let num9 = document.querySelector("#inputSubject9Number").value;
+            let num10 = document.querySelector("#inputSubject10Number").value;
+
+            let totalNumber = num1 + num2 + num3 + num4 + num5 + num6 + num7 + num8 + num9 + num10 ;
+          
+           let result =  totalNumber/10;
+           
+           document.querySelector("#result").innerHTML = `The average number is ${result}`;
+
+        }
+    </script>
+</body>
+</html>
